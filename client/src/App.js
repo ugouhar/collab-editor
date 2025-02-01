@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-export const App = () => {
+function App() {
   const [document, setDocument] = useState("");
   const [socket, setSocket] = useState(null);
 
@@ -53,4 +53,6 @@ export const App = () => {
       <textarea value={document} onChange={handleChange} rows="20" cols="80" />
     </div>
   );
-};
+}
+
+export default App;
